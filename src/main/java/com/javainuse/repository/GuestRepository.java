@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.javainuse.model.Employee;
+import com.javainuse.model.Guest;
  
 @Repository
-public interface EmployeeRepository extends JpaRepository<Employee, Long> {
-    List<Employee> findByEmployeeId(Long empId);
+public interface GuestRepository extends JpaRepository<Guest, Long> {
+    List<Guest> findByGuestId(Long empId);
 }
